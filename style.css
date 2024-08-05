@@ -12,15 +12,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
-  font-size: 16px;
 }
 body {
   max-width: 1440px;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--green-200-lighter);
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -31,8 +31,7 @@ main {
   background-color: white;
   border-radius: 20px;
   padding: 2rem;
-  margin-top: 2rem;
-  position: relative;
+  margin-top: 7rem;
 }
 input,
 textarea,
@@ -42,7 +41,7 @@ button {
   border-radius: 5px;
   outline: none;
   border: 2px solid var(--green-200-lighter);
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 16px;
 }
 input:focus,
@@ -52,6 +51,7 @@ textarea:focus {
 }
 button {
   cursor: pointer;
+  font-size: 16px;
   background-color: var(--green-600-medium);
   color: #fff;
 }
@@ -59,8 +59,9 @@ textarea {
   resize: none;
 }
 .section {
-  margin: 5px 0;
+  margin: 20px 0;
 }
+
 h1 {
   margin-bottom: 30px;
   font-weight: 700;
@@ -69,7 +70,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .flex-form > div {
   width: 100%;
@@ -78,7 +79,7 @@ h1 {
   border: 2px solid var(--green-200-lighter);
   width: 50%;
   padding: 10px;
-  margin: 5px 0;
+  margin: 10px 0;
   border-radius: 5px;
   display: flex;
   align-items: center;
