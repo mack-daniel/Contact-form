@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <h1>Contact Us</h1>
+      <form action="">
+        <div class="section flex-form">
+          <div>
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="fname" />
+            <p class="error invalid-fname error-display"></p>
+          </div>
+          <div>
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lname" />
+            <p class="error invalid-lname"></p>
+          </div>
+        </div>
+
+        <div class="section">
+          <label for="email">Email Address *</label>
+          <input type="text" id="email" name="email" />
+          <p class="error invalid-email error-display"></p>
+        </div>
+
+        <div class="section">
+          <p>Query Type *</p>
+          <div class="flex-form">
+            <div class="radio-section">
+              <input type="radio" name="query" value="general" id="general" />
+              <label for="general">General Enquiry</label>
+            </div>
+            <div class="radio-section">
+              <input type="radio" name="query" value="support" id="support" />
+              <label for="support">Support Request</label>
+            </div>
+          </div>
+          <p class="error invalid-query error-display"></p>
+        </div>
+
+        <div class="section">
+          <label for="message">Message *</label>
+          <textarea name="message" id="message" cols="30" rows="3"></textarea>
+          <p class="error invalid-message error-display"></p>
+        </div>
+
+        <div class="section form-consent">
+          <label class="container">
+            I consent to being contacted by the team *
+            <input type="checkbox" id="consent" />
+            <span class="checkmark"></span>
+          </label>
+          <p class="error invalid-consent error-display"></p>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </main>
+
+    <div class="modal">
+      <header>
+        <img src="./assets/images/icon-success-check.svg" alt="" />
+        <h2>Message Sent!</h2>
+      </header>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
